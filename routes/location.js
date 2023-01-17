@@ -3,6 +3,10 @@ const router = express.Router();
 const locationSchema = require("../models/location");
 
 const date = new Date();
+
+router.post("/add-location", (req, res) => {
+  res.send("Hi");
+});
 router.post("/add-location", (req, res) => {
   console.log(req.body.watchId);
   console.log(req.body.longitude);
