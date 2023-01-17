@@ -4,7 +4,7 @@ const locationSchema = require("../models/location");
 
 const date = new Date();
 
-router.post("/add-location", (req, res) => {
+router.get("/", (req, res) => {
   res.send("Hi");
 });
 router.post("/add-location", (req, res) => {
