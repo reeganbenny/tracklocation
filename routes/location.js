@@ -18,9 +18,7 @@ router.post("/add-location", (req, res) => {
     longitude: req.body.longitude,
     latitude: req.body.latitude,
   });
-  location.save().then((out) => {
-    res.send("Recieved");
-  });
+  location.save();
 });
 
 module.exports = router;
